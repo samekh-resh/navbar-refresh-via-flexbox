@@ -1,0 +1,94 @@
+*{
+    border: 1px dotted black;
+    /* include this so the padding and amrgins are included int he total length */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: aquamarine;
+
+}
+
+.flex-container{
+    display: flex;
+    /* make the boxes horizontal 
+      flex-direction: column;*/
+
+}
+
+.flex-container .NavBarElements{
+    height: 100 px;
+    background: white;
+    color: black;
+    flex: 1;
+    text-align: center;
+}
+
+.flex-container .first{
+    flex:2;
+}
+
+/* trying to center these will come back and center later */
+.another-container-for-content {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  max-width: 500px;
+}
+
+.child-elements{
+    flex:1;
+
+}
+
+@media (max-width: 600px) {
+  /* CSS rules for mobile phones */
+    .flex-container{
+        display: flex;
+        /* make the boxes horizontal  */
+        flex-direction: column;
+
+    }
+    .flex-container .NavBarElements{
+        height: 100 px;
+        width: fit-content;
+        background: white;
+        color: black;
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 601px) and (max-width: 767px) {
+  /* CSS rules for portrait tablets and large phones */
+  .flex-container{
+        display: flex;
+        /* make the boxes horizontal  */
+        flex-direction: column;
+    }
+
+    .flex-container .NavBarElements{
+        height: 100 px;
+        width: fit-content;
+        background: white;
+        color: black;
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS rules for landscape tablets */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* CSS rules for laptops and smaller desktops */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* CSS rules for large desktops and monitors */
+}

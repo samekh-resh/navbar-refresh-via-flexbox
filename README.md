@@ -11,3 +11,8 @@ when it gets smaller, make it a side bar?
 <!-- media queries -->
 
 allow you to apply styles based onthe characteristics of a device or the environment displaying the webpage. 
+
+
+
+
+    
